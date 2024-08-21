@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+/* ------------- HEADER CONTENT ------------- */
+
+header {
+    background-color: #504099;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(90% - 30%);
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 15%;
+    margin: 0 auto;
+}
+
+header > .logo {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 18px;
+    cursor: pointer;
+}
+
+header > .logo:hover {
+    background-color: #d4d4d4;
+}
+
+.page-links > ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    font-size: 20px;
+}
+
+.page-links > ul > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-links > ul > a:hover {
+    text-decoration: underline;
+}
+
+/* ------------- MAIN CONTENT ------------- */
+
+main {
+    /* background-color: red; */
+    margin: calc(10vh + 40px) 0;
+}
+
+.welcome {
+    height: calc(90vh - 40px);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.welcome > .welcome-content {
+    width: 40%;
+    height: 50%;
+    margin: 10px auto;
+}
+
+.welcome-content > .apresentation {
+}
+
+.welcome-content > .apresentation h1 {
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+.welcome-content > .apresentation h2 {
+    font-size: 30pt;
+    color: #000000bd;
+    margin-bottom: 15px;
+} 
+
+.welcome-content > .apresentation p {
+    color: #000000b0;
+}
+
+.welcome-content > .social-links-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.welcome-content .social-links-buttons img {
+    width: 50px;
+}
