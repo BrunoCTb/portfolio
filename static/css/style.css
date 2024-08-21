@@ -53,24 +53,21 @@ header > .logo:hover {
 /* ------------- MAIN CONTENT ------------- */
 
 main {
-    /* background-color: red; */
     margin: calc(10vh + 40px) 0;
+    padding: 0 80px;
 }
 
 .welcome {
     height: calc(90vh - 40px);
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 .welcome > .welcome-content {
     width: 40%;
     height: 50%;
     margin: 10px auto;
-}
-
-.welcome-content > .apresentation {
 }
 
 .welcome-content > .apresentation h1 {
@@ -96,4 +93,62 @@ main {
 
 .welcome-content .social-links-buttons img {
     width: 50px;
+}
+
+/* ------------- PROJECTS CONTENT ------------- */
+
+.projects {
+    /* padding: 70px 60px; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.projects .proj {
+    color: #000;
+    /* background-color: #974EC3; */
+    border: 3px solid #000;
+    border-radius: 10px;
+    height: calc(500px - 100px);
+    width: calc(100% - 60px);
+    display: flex;
+    padding: 50px 30px;
+    gap: 3%;
+}
+
+.projects .proj > .image-representation {
+    width: 30%;
+}
+
+.projects .proj > .image-representation img {
+    width: 100%;
+}
+
+.projects .proj > .project-info {
+    width: 47%;
+}
+
+.projects .proj > .project-info h3 {
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+.projects .proj > .project-access-links {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 15px;
+}
+
+.projects .proj > .project-access-links a {
+    width: 100px;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.projects .proj > .project-access-links img{
+    width: 30px;
 }
