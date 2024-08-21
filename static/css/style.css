@@ -51,10 +51,14 @@ header > .logo:hover {
 }
 
 /* ------------- MAIN CONTENT ------------- */
-
 main {
     margin: calc(10vh + 40px) 0;
     padding: 0 80px;
+}
+
+.topic-tile {
+    font-size: 30pt;
+    text-decoration: underline;
 }
 
 .welcome {
@@ -151,4 +155,34 @@ main {
 
 .projects .proj > .project-access-links img{
     width: 30px;
+}
+
+/* ------------- TECHNOLOGIES CONTENT ------------- */
+
+.technologies {
+    /* background-color: red; */
+    margin-top: 60px;
+    width: 100%;
+    height: calc(90vh - 40px);
+}
+
+.tech-info-card {
+    display: none;
+}
+
+.technologies img {
+    width: 50px;
+}
+
+.list-of-techs {
+    /* background-color: orange; */
+    width: 60%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.list-of-techs > .tech {
+    cursor: pointer;
 }

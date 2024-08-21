@@ -39,6 +39,10 @@
 		</article>	
 		
 		<article class="projects">
+			<div class="technologies-apresentation">	
+				<h2 class="topic-tile">Projetos</h2>
+			</div>
+
 			<section class="proj p1">
 				<div class="image-representation">
 					<img src="images/fake/project.jpg" alt="">
@@ -73,16 +77,16 @@
 		</article>
 			
 		<article class="technologies">
-				<div class="technologies-apresentation">	
-					<h2>Tecnologias</h2>
-					<p>obs: clique nos icons para ver um pouco mais</p>
-				</div>
-				<h2></h2>
+			<div class="technologies-apresentation">	
+				<h2 class="topic-tile">Tecnologias</h2>
+				<p>obs: clique nos icons para ver um pouco mais</p>
+			</div>
 
+			<div class="list-of-techs">
 				<div class="tech java">
-					<img src="images/icons/icons-tech/java/java-original.svg" title="java" title="java" alt="">
+					<img onclick="showTechInfo()" src="images/icons/icons-tech/java/java-original.svg" title="Java" title="java" alt="">
 					
-					<div class="tech-info-card" onclick="showTechInfo()">
+					<div class="tech-info-card">
 						<ul>
 							<li>Linguagem de programação Java</li>
 							<li>Linguagem principal</li>
@@ -92,9 +96,9 @@
 				</div>
 
 				<div class="tech spring">
-					<img src="images/icons/icons-tech/spring/spring-original.svg" title="spring" alt="">
+					<img onclick="showTechInfo()" src="images/icons/icons-tech/spring/spring-original.svg" title="Spring" alt="">
 					
-					<div class="tech-info-card" onclick="showTechInfo()">
+					<div class="tech-info-card">
 						<ul>
 							<li>Spring projects</li>
 							<li>Um framework do java para aplicações</li>
@@ -105,9 +109,9 @@
 				</div>
 
 				<div class="tech jquery">
-					<img src="images/icons/icons-tech/jquery/jquery-original.svg" title="jquery" alt="">
+					<img onclick="showTechInfo()" src="images/icons/icons-tech/jquery/jquery-original.svg" title="JQuery" alt="">
 					
-					<div class="tech-info-card" onclick="showTechInfo()">
+					<div class="tech-info-card">
 						<ul>
 							<li>Biblioteca JavaScript</li>
 						</ul>
@@ -115,9 +119,9 @@
 				</div>
 
 				<div class="tech restfulapi">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img onclick="showTechInfo()" src="images/techs/rest-api.png" title="RESTapi" alt="">
 					
-					<div class="tech-info-card" onclick="showTechInfo()">
+					<div class="tech-info-card">
 						<ul>
 							<li>Um tipo de api</li>
 							<li>A api que mais utilizo</li>
@@ -127,9 +131,9 @@
 				</div>
 
 				<div class="tech flyway">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img onclick="showTechInfo()" src="images/techs/flyway.png" title="Flyway" alt="">
 					
-					<div class="tech-info-card" onclick="showTechInfo()">
+					<div class="tech-info-card">
 						<ul>
 							<li>Flyway</li>
 							<li>Tem uma ideia parecida com git, que seria o versionamento (mas com banco de dados)</li>
@@ -233,7 +237,7 @@
 		
 		<article class="contact">
 			<div class="contact-apresentation">
-				<h2>Contato</h2>
+				<h2 class="topic-tile">Contato</h2>
 				<span>Insira as informações para me contatar:</span>
 			</div>
 
