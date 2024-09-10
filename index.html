@@ -15,15 +15,15 @@
 		<div class="page-links">
 			<ul>
 				<a href="#"><li>Início</li></a>
-				<a href="#"><li>Projetos</li></a>
-				<a href="#"><li>Tecnologias</li></a>
-				<a href="#"><li>Contato</li></a>
+				<a href="#projects"><li>Projetos</li></a>
+				<a href="#technologies"><li>Tecnologias</li></a>
+				<a href="#contact"><li>Contato</li></a>
 			</ul>
 		</div>
 	</header>
 
 	<main>
-		<article class="welcome">
+		<article id="welcome">
 			<div class="welcome-content">
 				<div class="apresentation">
 					<h1>Olá!</h1>
@@ -38,7 +38,7 @@
 			</div>
 		</article>	
 		
-		<article class="projects">
+		<article id="projects">
 			<div class="technologies-apresentation">	
 				<h2 class="topic-tile">Projetos</h2>
 			</div>
@@ -76,7 +76,7 @@
 			</section>
 		</article>
 			
-		<article class="technologies">
+		<article id="technologies">
 			<div class="technologies-apresentation">	
 				<h2 class="topic-tile">Tecnologias</h2>
 				<p>obs: clique nos icons para ver um pouco mais</p>
@@ -142,9 +142,8 @@
 					</div>
 				</div>
 
-<!--
 				<div class="tech mysql">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/mysql/mysql-original-wordmark.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
@@ -154,7 +153,7 @@
 				</div>
 
 				<div class="tech python">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/python/python-original-wordmark.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
@@ -164,7 +163,7 @@
 				</div>
 
 				<div class="tech flask">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/flask/flask-original-wordmark.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
@@ -174,7 +173,7 @@
 				</div>
 
 				<div class="tech django">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/django/django-plain-wordmark.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
@@ -184,7 +183,7 @@
 				</div>
 
 				<div class="tech aws">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/amazonwebservices/amazonwebservices-line-wordmark.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
@@ -194,7 +193,7 @@
 				</div>
 
 				<div class="tech html">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/html5/html5-original-wordmark.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
@@ -204,7 +203,7 @@
 				</div>
 
 				<div class="tech css">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/css3/css3-original-wordmark.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
@@ -214,7 +213,7 @@
 				</div>
 
 				<div class="tech tdd">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/junit/junit-line-wordmark.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
@@ -224,39 +223,57 @@
 				</div>
 
 				<div class="tech selenium">
-					<img src="images/icons/icons-tech/java/java-original.svg" alt="">
+					<img src="images/icons/icons-tech/selenium/selenium-original.svg" alt="">
 					
 					<div class="tech-info-card" onclick="showTechInfo()">
 						<h4>Nome da tech</h4>
 						<p>Descrição curta</p>
 						<p>Experiência curta curta</p>
 					</div>
-				</div> -->
+				</div> 
 			</div>
 		</article>
 		
-		<article class="contact">
-			<div class="contact-apresentation">
+		<!-- <article class="contact">
+			<div id="contact-apresentation">
 				<h2 class="topic-tile">Contato</h2>
 				<span>Insira as informações para me contatar:</span>
 			</div>
 
-			<form action="post">
+			<form method="post" action="" id="formEmail">
 				<input type="text" placeholder="Nome">
 				<input type="email" placeholder="Email">
 				<textarea placeholder="Conteúdo do email"></textarea>
 
 				<input type="submit" value="Enviar">
 			</form>
-		</article>
+		</article> -->
 	</main>
 	
-	<script>
-		function showTechInfo() {
-			console.log("faa");
-			
-		}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="static/js/script.js"></script>
 
+	<script>
+		$(document).ready(function() {
+			$('#formEmail').on('submit', function(event) {
+				event.preventDefault();
+				
+				$.ajax({
+					url: $(this).attr('action'),
+					method: 'POST',
+					data: $(this).serialize(),
+					dataType: 'json',
+					success: function(response) {
+						$('#form-message').text('Mensagem enviada com sucesso!');
+						$('#contact-form')[0].reset();
+					},
+					error: function(response) {
+						$('#form-message').text('Erro ao enviar a mensagem. Tente novamente.');
+					}
+				});
+			});
+		});
 	</script>
+
 </body>
 </html>
