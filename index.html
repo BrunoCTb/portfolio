@@ -1,279 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="static/css/style.css">
-	<title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BrunoCtB</title>
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<h2>BrunoCTb</h2>
-		</div>
-
-		<div class="page-links">
-			<ul>
-				<a href="#"><li>Início</li></a>
-				<a href="#projects"><li>Projetos</li></a>
-				<a href="#technologies"><li>Tecnologias</li></a>
-				<a href="#contact"><li>Contato</li></a>
-			</ul>
-		</div>
-	</header>
-
-	<main>
-		<article id="welcome">
-			<div class="welcome-content">
-				<div class="apresentation">
-					<h1>Olá!</h1>
-					<h2>Seja bem vindo ao meu portfólio</h2>
-					<p>Meu nome é Bruno Carvalho e sou um desenvolvedor backend.</p>
-				</div>
-				
-				<div class="social-links-buttons">
-					<a href="https://github.com/brunoCTb" alt=""><img src="images/icons/github.png" alt=""></a>
-					<a href="https://linkedin.com/in/bruno-ctb" alt=""><img src="images/icons/linkedin.png" alt=""></a>
-				</div>
-			</div>
-		</article>	
-		
-		<article id="projects">
-			<div class="technologies-apresentation">	
-				<h2 class="topic-tile">Projetos</h2>
-			</div>
-
-			<section class="proj p1">
-				<div class="image-representation">
-					<img src="images/fake/project.jpg" alt="">
-				</div>
-				
-				<div class="project-info">
-					<h3>Arena Virtual</h3>
-					<p>O Arena virtual é uma Plataforma de gerenciamento de campeonatos, sendo uma RestApi desenvolvida em Java com Spring para criação, organização e gerenciamento de campeonatos. Permite aos usuários criar competições personalizadas, gerenciar times e jogadores e facilitar torneios.</p>
-				</div>
-				
-				<div class="project-access-links">
-					<a href="https://github.com/BrunoCTb/Arena-virtual" target="_blank" title="Acessar o repositório" alt="repositório"><img src="images/icons/repository.png" alt=""></a>
-					<a href="#" title="Acessar aplicação em produção" alt="produção"><img src="images/icons/production.png" alt=""></a>
-				</div>
-			</section>
-			
-			<section class="proj p2">
-				<div class="image-representation">
-					<img src="images/fake/project.jpg" alt="">
-				</div>
-				
-				<div class="project-info">
-					<h3>Pets</h3>
-					<p>Um e-commerce de produtos específicos (bichos de pelúcia), que é vendido acessórios, os próprios bichos feitos de forma caseira e outros produtos. A ideia é ter toda funcionalidade de um comércio online, desde a exibição até a autenticação e compra. O fluxo de clientes é baixo porque o objetivo é ser quase como uma landing page, pois até mesmo usando um tráfego pago para atrair mais pessoas, quem irá comprar já vai saber mais ou menos o que quer ou então irá apenas visitar por curiosidade.</p>
-				</div>
-				
-				<div class="project-access-links">
-					<a href="https://github.com/BrunoCTb/Pets" target="_blank" title="Acessar o repositório" alt="repositório"><img src="images/icons/repository.png" alt=""></a>
-					<a href="#" title="Acessar aplicação em produção" alt="produção"><img src="images/icons/production.png" alt=""></a>
-				</div>
-			</section>
-		</article>
-			
-		<article id="technologies">
-			<div class="technologies-apresentation">	
-				<h2 class="topic-tile">Tecnologias</h2>
-				<p>obs: clique nos icons para ver um pouco mais</p>
-			</div>
-
-			<div class="list-of-techs">
-				<div class="tech java">
-					<img onclick="showTechInfo()" src="images/icons/icons-tech/java/java-original.svg" title="Java" title="java" alt="">
-					
-					<div class="tech-info-card">
-						<ul>
-							<li>Linguagem de programação Java</li>
-							<li>Linguagem principal</li>
-							<li>Uso em diversos projetos como <strong>Pets</strong> e <strong>Arena Virtual</strong></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="tech spring">
-					<img onclick="showTechInfo()" src="images/icons/icons-tech/spring/spring-original.svg" title="Spring" alt="">
-					
-					<div class="tech-info-card">
-						<ul>
-							<li>Spring projects</li>
-							<li>Um framework do java para aplicações</li>
-							<li>Uso tanto para aplicações rest quanto para web</li>
-							<li>Implementaçao com html e thymeleaf</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="tech jquery">
-					<img onclick="showTechInfo()" src="images/icons/icons-tech/jquery/jquery-original.svg" title="JQuery" alt="">
-					
-					<div class="tech-info-card">
-						<ul>
-							<li>Biblioteca JavaScript</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="tech restfulapi">
-					<img onclick="showTechInfo()" src="images/techs/rest-api.png" title="RESTapi" alt="">
-					
-					<div class="tech-info-card">
-						<ul>
-							<li>Um tipo de api</li>
-							<li>A api que mais utilizo</li>
-							<li>Uso nos projetos</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="tech flyway">
-					<img onclick="showTechInfo()" src="images/techs/flyway.png" title="Flyway" alt="">
-					
-					<div class="tech-info-card">
-						<ul>
-							<li>Flyway</li>
-							<li>Tem uma ideia parecida com git, que seria o versionamento (mas com banco de dados)</li>
-							<li>Migrações</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="tech mysql">
-					<img src="images/icons/icons-tech/mysql/mysql-original-wordmark.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div>
-
-				<div class="tech python">
-					<img src="images/icons/icons-tech/python/python-original-wordmark.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div>
-
-				<div class="tech flask">
-					<img src="images/icons/icons-tech/flask/flask-original-wordmark.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div>
-
-				<div class="tech django">
-					<img src="images/icons/icons-tech/django/django-plain-wordmark.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div>
-
-				<div class="tech aws">
-					<img src="images/icons/icons-tech/amazonwebservices/amazonwebservices-line-wordmark.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div>
-
-				<div class="tech html">
-					<img src="images/icons/icons-tech/html5/html5-original-wordmark.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div>
-
-				<div class="tech css">
-					<img src="images/icons/icons-tech/css3/css3-original-wordmark.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div>
-
-				<div class="tech tdd">
-					<img src="images/icons/icons-tech/junit/junit-line-wordmark.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div>
-
-				<div class="tech selenium">
-					<img src="images/icons/icons-tech/selenium/selenium-original.svg" alt="">
-					
-					<div class="tech-info-card" onclick="showTechInfo()">
-						<h4>Nome da tech</h4>
-						<p>Descrição curta</p>
-						<p>Experiência curta curta</p>
-					</div>
-				</div> 
-			</div>
-		</article>
-		
-		<!-- <article class="contact">
-			<div id="contact-apresentation">
-				<h2 class="topic-tile">Contato</h2>
-				<span>Insira as informações para me contatar:</span>
-			</div>
-
-			<form method="post" action="" id="formEmail">
-				<input type="text" placeholder="Nome">
-				<input type="email" placeholder="Email">
-				<textarea placeholder="Conteúdo do email"></textarea>
-
-				<input type="submit" value="Enviar">
-			</form>
-		</article> -->
-	</main>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="static/js/script.js"></script>
+	<main>
+		<article class="welcome">
+			<h1>Olá! Seja bem vindo</h1>
+			<h2>Bruno Carvalho Tambellini</h2>
 
-	<script>
-		$(document).ready(function() {
-			$('#formEmail').on('submit', function(event) {
-				event.preventDefault();
+			<h3>Desenvolvedor backend</h3>
+
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+			<ul class="welcome-social-links">
+				<li><a href="#"><img src="#" alt="github"></a></li>
+				<li><a href="#"><img src="#" alt="linkedin"></a></li>
+				<li><a href="#"><img src="#" alt="email"></a></li>
+			</ul>
+		</article>
+
+		<article class="projects">
+			<h1>Projetos</h1>
+
+			<div class="main-projects">
+				<div class="project1">
+					<h3>Project 1 title</h3>
+					<p>*Projetct description* - Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+					<div class="project-actions">
+						<a href="www.github.com/Brunoctb"><img src="" alt=""></a>
+						<button>ver informações</button>
+					</div>
+				</div>
+
+				<div class="project2">
+					<h3>Project 2 title</h3>
+					<p>*Projetct description* - Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+					<div class="project-actions">
+						<a href="www.github.com/Brunoctb"><img src="" alt=""></a>
+						<button>ver informações</button>
+					</div>
+				</div>
 				
-				$.ajax({
-					url: $(this).attr('action'),
-					method: 'POST',
-					data: $(this).serialize(),
-					dataType: 'json',
-					success: function(response) {
-						$('#form-message').text('Mensagem enviada com sucesso!');
-						$('#contact-form')[0].reset();
-					},
-					error: function(response) {
-						$('#form-message').text('Erro ao enviar a mensagem. Tente novamente.');
-					}
-				});
-			});
-		});
-	</script>
+			</div>
 
+			<div class="simple-projects">
+				<div class="project3">
+					<h3>Project 3 title</h3>
+					<p>*Projetct description* - Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+					<div class="project-actions">
+						<a href="www.github.com/Brunoctb"><img src="" alt=""></a>
+						<button>ver informações</button>
+					</div>
+				</div>
+				<div class="project4">
+					<h3>Project 4 title</h3>
+					<p>*Projetct description* - Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+					<div class="project-actions">
+						<a href="www.github.com/Brunoctb"><img src="" alt=""></a>
+						<button>ver informações</button>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="techs">
+			<h1>Tecnologias</h1>
+
+			<div class="backend"></div>
+			<div class="frontend"></div>
+			<div class="tools"></div>
+		</article>
+
+	</main>
+
+	<footer>
+		<ul class="footer-social-links">
+			<li><a href="#"><img src="#" alt="github"></a></li>
+			<li><a href="#"><img src="#" alt="linkedin"></a></li>
+			<li><a href="#"><img src="#" alt="email"></a></li>
+		</ul>
+
+		<p>© 2025 Bruno Carvalho Tambellini. Todos os direitos reservados.</p>
+	</footer>
 </body>
 </html>
