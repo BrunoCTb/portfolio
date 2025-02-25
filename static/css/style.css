@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat';
 }       
 
+/* WELCOME CONTENT */
 .welcome {
     height: 100vh;
     display: flex;
@@ -54,3 +55,69 @@ body {
 }
 
 
+/* PROJECTS CONTENT */
+.projects {
+    /* background-color: red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+    padding: 0 5%;
+}
+
+.projects h1 {
+    font-size: 25pt;
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-bottom: 5%; */
+}
+
+.main-projects, .simple-projects {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.project {
+    padding: 20px;
+    border: 1px solid #00000025;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project h3 {
+    font-size: 14pt;
+    margin-bottom: 1.5%;
+}
+
+.project p {
+    font-size: 11pt;
+    color: #000000b9;
+    margin-bottom: 3%;
+}
+
+.project button {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    /* border: 1px solid #a855f7; */
+    border: 1px solid #00000025;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.project button:hover {
+    background-color: #a855f7;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.projects > hr {
+    width: calc(100% - 12%);
+    align-self: center;
+    color: #0000002c;
+}
