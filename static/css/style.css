@@ -188,5 +188,25 @@ body {
 }
 
 
+/* FOOTER CONTENT */
+footer {
+    background-color: #c9c9c9;
+    height: calc(20vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    /* padding: 30px 50px; */
+}
 
+.footer-social-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+footer img {
+    width: 20px;
+}
 
