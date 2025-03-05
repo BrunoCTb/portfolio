@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="static/css/project-card.css">
 	<title>BrunoCtB</title>
 </head>
 
@@ -32,6 +33,7 @@
 
 		<article class="projects">
 			<h1>Projetos</h1>
+			
 
 			<div class="main-projects">
 				<div class="project project1">
@@ -40,11 +42,11 @@
 
 					<div class="project-actions">
 						<a href="www.github.com/Brunoctb"><img src="" alt=""></a>
-						<button>Ver informações</button>
+						<button onclick="openCard()">Ver informações</button>
 					</div>
 
 					<div class="project-card">
-						<div class="close-card">
+						<div class="close-card" onclick="closeCard()">
 							<span>x</span>
 						</div>
 						<div class="project-card-title">
@@ -60,21 +62,21 @@
 							<span>Flyway (DB Migrations)</span>
 						</div>
 						<div class="project-card-images">
-							<span><</span>
+							<span id="previous-image"><</span>
 							<div class="project-card-carousel">
 								<img src="images/not-found.png" alt="1">
-								<img src="images/not-found.png" alt="2">
+								<!-- <img src="images/not-found.png" alt="2">
 								<img src="images/not-found.png" alt="3">
-								<img src="images/not-found.png" alt="4">
+								<img src="images/not-found.png" alt="4"> -->
 							</div>
-							<span>></span>
+							<span id="previous-image">></span>
 						</div>
 						<div class="description">
 							<p>Uma Plataforma de gerenciamento de campeonatos, sendo uma RestApi desenvolvida em Java com Spring para criação, organização e gerenciamento de campeonatos. Permite aos usuários criar competições personalizadas, gerenciar times e jogadores e facilitar torneios.</p>
 						</div>
 						<div class="btn-actions">
 							<a href="www.github.com/BrunoCTb"><img src="images/social/github.png" alt="github">Código</a>
-							<button>Fechar</button>
+							<button onclick="closeCard()">Fechar</button>
 						</div>
 					</div>
 				</div>
@@ -173,6 +175,28 @@
 
 		<p>© 2025 Bruno Carvalho Tambellini. Todos os direitos reservados.</p>
 	</footer>
-</body>
 
+	<script>
+		function openCard() {
+			card = document.getElementsByClassName("project-card")[0]
+			card.style.display = "block";
+
+			main = document.getElementsByTagName("main")[0]
+			main.className = "overlay";
+			footer = document.getElementsByTagName("footer")[0]
+			footer.className = "overlay";
+
+			body = document.getElementsByTagName("body")[0]
+			body.style.overflowY = "hidden";
+
+			console.log(main);
+			
+		}
+
+		function closeCard() {
+			card = document.getElementsByClassName("project-card")[0]
+			card.style.display = "none";
+		}
+	</script>
+</body>
 </html>

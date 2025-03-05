@@ -9,6 +9,10 @@ body {
     font-family: 'Montserrat';
 }       
 
+.project-card {
+    display: none;
+}
+
 /* WELCOME CONTENT */
 .welcome {
     height: 100vh;

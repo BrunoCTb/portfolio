@@ -1,0 +1,127 @@
+/* body { */
+.overlay {
+/* main, footer { */
+    /* Começa invisível */
+    /* display: none;  */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+}
+
+
+.project-card {
+    background-color: red;
+    width: 50vw;
+    height: 60vh;
+    top: calc(50% - 30vh - 4%);
+    left: calc(50% - 25vw - 4%);
+    position: fixed;
+    padding: 2%;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.project-card img {
+    width: 20px;
+
+}
+.project-card > .close-card {
+    position: absolute;
+    top: calc(0px + 4%);
+    right: 4%;
+    background-color: yellow;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.project-card-title {
+    margin-bottom: 3%;
+}
+
+.project-card-title h2 {
+    font-size: 18pt;
+}
+
+.project-card-techs {
+    /* background-color: orange; */
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.project-card-techs span {
+    /* background-color: blue; */
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.project-card-images {
+    /* background-color: greenyellow; */
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.project-card-images span{
+    background-color: brown;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.project-card-images #previous-image {
+    
+}
+
+.project-card-images > .project-card-carousel {
+    width: 100%;
+    height: 100%;
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card-images > .project-card-carousel img {
+    width: 50%;
+    height: 80%;
+}
+
+.project-card .btn-actions {
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.btn-actions a, .btn-actions button {
+    background-color: pink;
+    color: #000;
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.project-card .btn-actions a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.project-card .btn-actions button {
+}
+
+
+
