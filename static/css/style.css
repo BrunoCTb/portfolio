@@ -101,7 +101,7 @@ body {
     margin-bottom: 3%;
 }
 
-.project button {
+.project .project-actions button {
     padding: 15px;
     cursor: pointer;
     background-color: #fff;
