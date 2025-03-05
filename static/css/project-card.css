@@ -45,6 +45,8 @@
 .project-card-techs {
     width: 80%;
     margin-bottom: 5%;
+    display: flex;
+    gap: 2%;
 }
 
 .project-card-techs span {
