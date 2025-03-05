@@ -1,20 +1,11 @@
-/* body { */
 .overlay {
-/* main, footer { */
-    /* Começa invisível */
-    /* display: none;  */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* width: 100vw; */
-    /* height: 100vh; */
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9;
 }
 
 
 .project-card {
-    background-color: red;
+    background-color: #FFF;
     width: 50vw;
     height: 60vh;
     top: calc(50% - 30vh - 4%);
@@ -47,19 +38,16 @@
 }
 
 .project-card-techs {
-    /* background-color: orange; */
     width: 80%;
     margin-bottom: 5%;
 }
 
 .project-card-techs span {
-    /* background-color: blue; */
     padding: 5px;
     border-radius: 10px;
 }
 
 .project-card-images {
-    /* background-color: greenyellow; */
     height: 40%;
     display: flex;
     justify-content: space-between;
@@ -76,14 +64,9 @@
     cursor: pointer;
 }
 
-.project-card-images #previous-image {
-    
-}
-
 .project-card-images > .project-card-carousel {
     width: 100%;
     height: 100%;
-    /* background-color: palevioletred; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +78,6 @@
 }
 
 .project-card .btn-actions {
-    /* background-color: greenyellow; */
     display: flex;
     align-items: center;
     justify-content: end;
@@ -119,9 +101,4 @@
     gap: 5px;
     text-decoration: none;
 }
-
-.project-card .btn-actions button {
-}
-
-
 
