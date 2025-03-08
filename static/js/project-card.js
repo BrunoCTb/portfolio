@@ -17,7 +17,7 @@ const pj2Content = {
 const pj3Content = {
     'title': 'Safe Text', 
     'eachTechs': ['Java', 'SQlite3'], 
-    'pjImageUrls': ['images/not-found.png'], 
+    'pjImageUrls': ['images/not-found.png'],
     'pjDescription': 'Armazenar informações de forma mais segura', 
     'pjGithubUrl': 'https://github.com/BrunoCTb/safe-text'
 }
@@ -40,8 +40,6 @@ function openCard(projectTitle) {
     let html = editPjContent(project)
     
     card.innerHTML += html;
-
-    
 }
 
 function closeCard() {
@@ -103,7 +101,7 @@ function editPjContent(data) {
                 <p>${data.pjDescription}</p>
             </div>
             <div class="btn-actions">
-                <a href="${data.pjGithubUrl}"><img src="images/social/github.png" alt="github">Código</a>
+                <a href="${data.pjGithubUrl}" target="_blank"><img src="images/social/github.png" alt="github">Código</a>
                 <button onclick="closeCard()">Fechar</button>
             </div>`
 }
