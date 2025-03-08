@@ -1,25 +1,25 @@
 const pj1Content = {
     'title': 'Arena virtual', 
-    'eachTechs': ['Java', 'Spring Projects'], 
+    'eachTechs': ['Java', 'Spring Projects', 'HTML', 'CSS', 'Js', 'MySQL', 'Flyway'], 
     'pjImageUrls': ['images/not-found.png'], 
     'pjDescription': 'Uma Plataforma de gerenciamento de campeonatos, sendo uma RestApi desenvolvida em Java com Spring para criação, organização e gerenciamento de campeonatos. Permite aos usuários criar competições personalizadas, gerenciar times e jogadores e facilitar torneios.', 
-    'pjGithubUrl': 'www.github.com/BrunoCTb/Arena-virtual'
+    'pjGithubUrl': 'https://github.com/BrunoCTb/Arena-virtual'
 }
 
 const pj2Content = {
     'title': 'Pets', 
-    'eachTech': ['tech1'], 
-    'pjImageUrl': ['urlimage'], 
-    'pjDescription': 'desc', 
-    'pjGithubUrl': 'http'
+    'eachTechs': ['Java', 'Spring Projects', 'Thymeleaf', 'HTML', 'CSS', 'Js', 'Jquery', 'MySQL'], 
+    'pjImageUrls': ['images/not-found.png'], 
+    'pjDescription': 'E-commerce de produtos relacionados a pets', 
+    'pjGithubUrl': 'https://github.com/BrunoCTb/pets/'
 }
 
 const pj3Content = {
     'title': 'Safe Text', 
-    'eachTech': [], 
-    'pjImageUrl': [], 
-    'pjDescription': '', 
-    'pjGithubUrl': ''
+    'eachTechs': ['Java', 'SQlite3'], 
+    'pjImageUrls': ['images/not-found.png'], 
+    'pjDescription': 'Armazenar informações de forma mais segura', 
+    'pjGithubUrl': 'https://github.com/BrunoCTb/safe-text'
 }
 
 const projectsList = [pj1Content, pj2Content, pj3Content]
@@ -40,6 +40,8 @@ function openCard(projectTitle) {
     let html = editPjContent(project)
     
     card.innerHTML += html;
+
+    
 }
 
 function closeCard() {
@@ -53,6 +55,8 @@ function closeCard() {
 
     body = document.getElementsByTagName("body")[0]
     body.style.overflowY = "scroll";
+
+    card.innerHTML = "";
 }
 
 function getProject(projectTitle) {
